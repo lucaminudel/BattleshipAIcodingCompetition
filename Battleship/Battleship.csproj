@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE998D97-ABA4-4DCB-B772-41D56916F4F9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Battleship</RootNamespace>
+    <AssemblyName>Battleship</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUG_FRAMEWORK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DEBUG_FRAMEWORK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BattleshipCompetition.cs" />
+    <Compile Include="IBattleshipOpponent.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\AgentSmith.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\BP7.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\BSKiller4\BSKiller4.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\BSKiller4\OpponentExtended.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\BSKiller4\shotPossibilities.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\Defense.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\Dreadnought.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\GameState.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\IDefense.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\IOffense.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\Offense.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\Dreadnought\SeaState.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\FarnsworthOpponent.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\RandomOpponent.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\BattleshipState.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\DFBattleshipOpponent.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\EumerableEx.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\FillHolesShotProvider.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\Grid.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\IShotProvider.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\MatchStats.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\SearchingState.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\Shot.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\SinkingState.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Deathflame\UniformDistributedShotProvider.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\AreeNavi.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Cella.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Direzione.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Extensions.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\FasePartita.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Griglia.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\KobayashiMaru.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Nave.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\ProprietaNave.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\SubArea.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\KobayashiMaru2\Utility.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Board.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Config.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\CountMap.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Extensions.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\GameInfo.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\MatchInfo.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Matrix.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\MyDebug.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\ProbabilisticMap.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\ProbabilisticStrategy.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\ShotInfo.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\SinkStrategy.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Strategy.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Terminator2.cs" />
+    <Compile Include="Opponents\FromUGIdotNETCompetition\Terminator\Util.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Battlefield.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\BattlefieldCellState.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\BattelfieldPopulation.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\Battlefield.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\BattlefieldDNA.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\CalculateFitnessWithMinimumWeightStrategy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\ICalculateFitnessStrartegy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Defense\UniformDistributionDefenceStrategy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\IDefenseStrategy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\IOffenseStrategy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Navy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\EmptyCellsOracle.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\IEmptyCellsOracle.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\IOpponentBattlefield.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\IPartiallySinkShipsOracle.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\IProbabilityBasedOffenseStrategyFactory.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\OpponentBattlefield.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\OpponentBattlefieldBattlefieldHandler.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\OpponentBattlefieldStatisticsHandler.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\PartiallySinkShipsOracle.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\ProbabilityBasedOffenseStrategy.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Offense\ProbabilityBasedOffenseStrategyFactory.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\Ships.cs" />
+    <Compile Include="Opponents\Nebuchadnezzar\ZionControlCenter.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\BoardView.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\Cell.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\Compass.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\Extensions.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\OpponentsBoardState.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\Rand.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\ShuggyCoUk\Simple.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\Attack.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\Board.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\Extent.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\HunterBoard.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\Shot.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\ShotBoard.cs" />
+    <Compile Include="Opponents\FromStackoverflowCompetition\USSMissouri\USSMissouri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ship.cs" />
+    <Compile Include="ShipOrientation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
